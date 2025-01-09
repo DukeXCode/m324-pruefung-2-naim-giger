@@ -3,11 +3,12 @@ name: CI
 on:
   pull_request:
     branches:
+      - main
       - master
 
 jobs:
   lint-format-test:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v14
